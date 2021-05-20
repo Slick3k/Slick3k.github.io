@@ -1,0 +1,18 @@
+.clearfix (){
+	zoom:1;
+	&:before, &:after{ content:""; display:table; }
+	&:after{ clear: both; }
+}
+
+.bgIMG(@1x, @2x){
+	background-image: url(@1x);
+	background-image: -webkit-image-set(url(@1x) 1x,url(@2x) 2x);
+}
+
+
+.x2(@1x, @ext: 'png'){
+    background-image: url("/img/@{1x}.@{ext}");
+    background-image: -webkit-image-set(url("/img/@{1x}.@{ext}") 1x,url("/img/@{1x}@2x.@{ext}") 2x);
+    background-position: center center;
+    background-repeat: no-repeat;
+}

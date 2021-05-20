@@ -1,0 +1,45 @@
+* {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+body,
+html {
+  width: 100%;
+  min-width: 1200px;
+  overflow-x: hidden;
+}
+@media (max-width: 500px) {
+  body,
+  html {
+    min-width: 0;
+  }
+}
+input:focus {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #000;
+}
+::-moz-placeholder {
+  color: #000;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #000;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #000;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
